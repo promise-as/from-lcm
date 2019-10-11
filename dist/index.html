@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>底部留单模块</title>
-  <script type="text/javascript" src="js/thea.debug.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="css/base.css">
-  <!--<link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/modules-style.css">-->
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript" src="https://img.thea.cn/public/js/thea.debug.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
+  
+  <link rel="stylesheet" href="https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/css/index.css">
 </head>
 <body>
 
@@ -17,13 +16,14 @@
   <!-- 攻读名校本科 -->
   <div class="famous-school">
     <form class="sign-in">
+      <input type="hidden" class="user-name">
       <div class="form-row">
         <label for="school">意向院校：</label>
-        <input type="text" placeholder="选填" id="school">
+        <input type="text" placeholder="选填" id="school" class="user-con">
       </div>
       <div class="form-row">
         <label for="education">目前学历：</label>
-        <select id="education">
+        <select id="education" class="user-con">
           <option value="初中及以下">初中及以下</option>
           <option value="高中/中专/技校">高中/中专/技校</option>
           <option value="专科及以上">专科及以上</option>
@@ -31,7 +31,7 @@
       </div>
       <div class="form-row important">
         <label for="contact">联系方式：</label>
-        <input type="text" placeholder="请输入您的手机号/微信号" id="contact">
+        <input type="text" placeholder="请输入您的手机号/微信号" id="contact" class="user-tel">
       </div>
       <div class="form-row">
         <input type="submit" value="立即预报名">
@@ -42,14 +42,15 @@
 
   <!-- 优选自考 -->
   <div class="self-study">
+    <input type="hidden" class="user-name">
     <form class="sign-in">
       <div class="form-row">
         <label for="school-2">意向院校：</label>
-        <input type="text" placeholder="选填" id="school-2">
+        <input type="text" placeholder="选填" id="school-2" class="user-con">
       </div>
       <div class="form-row">
         <label for="education-2">目前学历：</label>
-        <select id="education-2">
+        <select id="education-2" class="user-con">
           <option value="初中及以下">初中及以下</option>
           <option value="高中/中专/技校">高中/中专/技校</option>
           <option value="专科及以上">专科及以上</option>
@@ -57,9 +58,36 @@
       </div>
       <div class="form-row important">
         <label for="contact-2" class="important">联系方式：</label>
-        <input type="text" placeholder="请输入您的手机号/微信号" id="contact-2">
+        <input type="text" placeholder="请输入您的手机号/微信号" id="contact-2" class="user-tel">
       </div>
       <div class="form-row submit-btn">
+        <input type="submit" value="立即预报名">
+        <a href="" target="_blank" class="row-consult">在线咨询</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- 成人学历 -->
+  <div class="adult-education">
+    <input type="hidden" class="user-name">
+    <form class="sign-in">
+      <div class="form-row">
+        <label for="school-3">意向院校：</label>
+        <input type="text" placeholder="选填" id="school-3" class="user-con">
+      </div>
+      <div class="form-row">
+        <label for="education-3">目前学历：</label>
+        <select id="education-3" class="user-con">
+          <option value="初中及以下">初中及以下</option>
+          <option value="高中/中专/技校">高中/中专/技校</option>
+          <option value="专科及以上">专科及以上</option>
+        </select>
+      </div>
+      <div class="form-row important">
+        <label for="contact-3">联系方式：</label>
+        <input type="text" placeholder="请输入您的手机号/微信号" id="contact-3" class="user-tel">
+      </div>
+      <div class="form-row">
         <input type="submit" value="立即预报名">
         <a href="" target="_blank" class="row-consult">在线咨询</a>
       </div>

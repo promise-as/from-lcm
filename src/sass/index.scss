@@ -37,8 +37,8 @@ $padding-size:pr(24px);
 /* 攻读名校本科 */
 .famous-school{
   padding: 119px 110px 0 60px;
-  background: url("../images/pc-form_1.png") no-repeat;
-  margin-bottom: 20px;
+  background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/pc-form_1.png") no-repeat;
+  margin-bottom: 10px;
   .sign-in{
     width: 100%;
     padding: 25px 48px 0 40px;
@@ -52,6 +52,7 @@ $padding-size:pr(24px);
       &:last-child{
         margin-bottom: 0;
         padding-left: 0;
+        text-align: center;
       }
       label{
         font-weight: bold;
@@ -87,11 +88,11 @@ $padding-size:pr(24px);
       }
       select{
         padding: 0 1em;
-        background: url("../images/icon_1.png") no-repeat 265px #ffffff;
+        background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_1.png") no-repeat 93% #ffffff;
         background-size: 7px 4px;
       }
       &.important{
-        background: url("../images/icon_2.png") no-repeat left;
+        background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_2.png") no-repeat left;
         background-size: 6px 6px;
       }
       input[type='submit']{
@@ -139,7 +140,8 @@ $padding-size:pr(24px);
 /* 优选自考 */
 .self-study{
   padding: 20px 20px 20px 260px;
-  background: url("../images/pc-form_2.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/pc-form_2.png") no-repeat;
+  margin-bottom: 10px;
   .sign-in{
     width: 100%;
     padding: 30px 20px;
@@ -193,11 +195,11 @@ $padding-size:pr(24px);
       }
       select{
         padding: 0 1em;
-        background: url("../images/icon_1.png") no-repeat 265px #ffffff;
+        background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_1.png") no-repeat 93% #ffffff;
         background-size: 7px 4px;
       }
       &.important{
-        background: url("../images/icon_2.png") no-repeat left;
+        background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_2.png") no-repeat left;
         background-size: 6px 6px;
       }
       input[type='submit'], .row-consult{
@@ -237,6 +239,108 @@ $padding-size:pr(24px);
   }
 }
 
+/* 成人学历 */
+.adult-education{
+  padding: 119px 110px 0 60px;
+  background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/pc-form_3.png") no-repeat;
+  .sign-in{
+    width: 100%;
+    padding: 25px 48px 0 40px;
+    box-sizing: border-box;
+    .form-row{
+      font-size: 14px;
+      line-height: 38px;
+      color: #444444;
+      margin-bottom: 13px;
+      padding-left: 17px;
+      &:last-child{
+        margin-bottom: 0;
+        padding-left: 0;
+        text-align: center;
+      }
+      label{
+        font-weight: bold;
+      }
+      input[type="text"],select{
+        appearance: none;
+        &::-webkit-input-placeholder{
+          color: #999;
+          font-size: inherit;
+        }
+        &:-moz-placeholder {
+          color: #999;
+          font-size: inherit;
+        }
+        &::-moz-placeholder {
+          color: #999;
+          font-size: inherit;
+        }
+        &:-ms-input-placeholder {
+          color: #999;
+          font-size: inherit;
+        }
+      }
+      input,select{
+        width: 284px;
+        height: 38px;
+        border: solid 1px #dddddd;
+        outline: none;
+        font-family: '微软雅黑';
+      }
+      input{
+        text-indent: 1em;
+      }
+      select{
+        padding: 0 1em;
+        background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_1.png") no-repeat 93% #ffffff;
+        background-size: 7px 4px;
+      }
+      &.important{
+        background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_2.png") no-repeat left;
+        background-size: 6px 6px;
+      }
+      input[type='submit']{
+        width: 181px;
+        height: 42px;
+        line-height: 42px;
+        background-image: linear-gradient(135deg,
+            #ffca10 0%,
+            #ef6e28 100%),
+        linear-gradient(
+                #ef6e28,
+                #ef6e28);
+        background-blend-mode: normal,
+        normal;
+        border-radius: 6px 6px 0px 0px;
+        border: none;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .row-consult{
+        @extend %in-b;
+        width: 181px;
+        height: 42px;
+        line-height: 42px;
+        background-image: linear-gradient(135deg,
+            #46c7eb 0%,
+            #3993e9 100%),
+        linear-gradient(
+                #3993e9,
+                #3993e9);
+        background-blend-mode: normal,
+        normal;
+        border-radius: 6px 6px 0px 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: #ffffff;
+        margin-left: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width:750px) {
   /* 表单模块 */
   .form-lcm{
@@ -246,7 +350,7 @@ $padding-size:pr(24px);
   /* 攻读名校本科 */
   .famous-school{
     padding: pr(119px) pr(30px) 0;
-    background: url("../images/wap-form_1.png") no-repeat;
+    background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/wap-form_1.png") no-repeat;
     background-size: 100% 100%;
     .sign-in{
       padding: pr(30px) 0 0 pr(26px);
@@ -259,15 +363,16 @@ $padding-size:pr(24px);
           width: pr(364px);
           height: pr(52px);
         }
-        input[type='submit']{
-          width: pr(261px);
-          height: pr(56px);
-          line-height: pr(56px);
+        select{
+          background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_1.png") no-repeat 92% #ffffff;
+          background-size: pr(13px) pr(7px);
         }
-        .row-consult{
+        input[type='submit'],.row-consult{
           width: pr(261px);
           height: pr(56px);
           line-height: pr(56px);
+          font-size: pr(28px);
+          border-radius: pr(6px) pr(6px) 0 0;
         }
       }
     }
@@ -276,33 +381,35 @@ $padding-size:pr(24px);
   /* 优选自考 */
   .self-study{
     padding: pr(20px) pr(20px) pr(26px) pr(260px);
-    background: url("../images/wap-form_2.png") no-repeat;
+    background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/wap-form_2.png") no-repeat;
     background-size: 100% 100%;
     position: relative;
     .sign-in{
-      padding: pr(20px) pr(20px) pr(70px) pr(20px);
-      box-shadow: 0px 0px pr(24px) 0px;
+      padding: pr(20px) pr(20px) pr(50px) pr(20px);
+      box-shadow: 0px 0px pr(24px) 0px
+      rgba(210, 87, 20, 0.42);
       border-radius: pr(6px);
       .form-row{
         font-size: pr(26px);
         line-height: pr(26px);
         margin-bottom: pr(20px);
         padding-left: 0;
-
         label{
           margin-bottom: pr(20px);
           &.important{
             padding-right: pr(27px);
-            background: url("../images/icon_2.png") no-repeat right;
+            background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_2.png") no-repeat right;
             background-size: pr(9px) pr(9px);
           }
         }
         input,select{
           width: 100%;
+          height: pr(52px);
+          line-height: pr(52px);
         }
         select{
           padding: 0 1em;
-          background: url("../images/icon_1.png") no-repeat 92% #ffffff;
+          background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_1.png") no-repeat 92% #ffffff;
           background-size: pr(13px) pr(7px);
         }
         &.important{
@@ -312,10 +419,12 @@ $padding-size:pr(24px);
           width: pr(261px);
           height: pr(56px);
           line-height: pr(56px);
-          border-radius: 0;
+          font-size: pr(28px);
+          border-radius: pr(6px) pr(6px) 0 0;
         }
         .row-consult{
           margin-left: pr(20px);
+          box-shadow: none;
         }
         &.submit-btn{
           position: absolute;
@@ -324,6 +433,37 @@ $padding-size:pr(24px);
           right: 0;
           margin: auto;
           text-align: center;
+        }
+      }
+    }
+  }
+
+  /* 成人学历 */
+  .adult-education{
+    padding: pr(119px) pr(30px) 0;
+    background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/wap-form_3.png") no-repeat;
+    background-size: 100% 100%;
+    .sign-in{
+      padding: pr(30px) 0 0 pr(26px);
+      .form-row{
+        font-size: pr(26px);
+        line-height: pr(52px);
+        margin-bottom: pr(13px);
+        padding-left: pr(20px);
+        input,select{
+          width: pr(364px);
+          height: pr(52px);
+        }
+        select{
+          background: url("https://img.thea.cn/public/platform/thea/201910/hbj/form-lcm/images/icon_1.png") no-repeat 92% #ffffff;
+          background-size: pr(13px) pr(7px);
+        }
+        input[type='submit'],.row-consult{
+          width: pr(261px);
+          height: pr(56px);
+          line-height: pr(56px);
+          font-size: pr(28px);
+          border-radius: pr(6px) pr(6px) 0 0;
         }
       }
     }
